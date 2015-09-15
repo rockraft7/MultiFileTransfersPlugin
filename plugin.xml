@@ -16,7 +16,7 @@
     </js-module>
     <platform name="android">
         <config-file parent="/*" target="res/xml/config.xml">
-            <feature name="MultiFileTransfer">
+            <feature name="MultiFileTransfers">
                 <param name="android-package" value="com.rockraft7.plugin.multifiletransfers.MultiFileTransfers"/>
                 <param name="onload" value="true"/>
             </feature>
