@@ -11,7 +11,7 @@
     <engines>
         <engine name="cordova" version="&gt;=3.0.0"/>
     </engines>
-    <js-module name="MultiFileTransfers" src="www/multifiletransfers.js">
+    <js-module name="MultiFileTransfers" src="www/multifiletransfer.js">
         <clobbers target="MultiFileTransfers"/>
     </js-module>
     <platform name="android">
@@ -22,5 +22,8 @@
             </feature>
         </config-file>
         <source-file src="src/android/MultiFileTransfers.java" target-dir="src/com/rockraft7/plugin/multifiletransfers"/>
+        <source-file src="src/android/FileInfo.java" target-dir="src/com/rockraft7/plugin/multifiletransfers"/>
+        <framework src="com.squareup.okhttp3:okhttp:3.8.1" />
+        <framework src="org.json:json:20170516" />
     </platform>
 </plugin>
