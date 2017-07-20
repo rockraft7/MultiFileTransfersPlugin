@@ -1,0 +1,21 @@
+{
+    "name": "cordova-plugin-multifiletransfer",
+    "version": "1.0.0",
+    "description": "Multifile upload plugin",
+    "cordova": {
+        "id": "cordova-plugin-multifiletransfer",
+        "platforms": ["android"]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/rockraft7/MultiFileTransfersPlugin"
+    },
+    "keywords": [
+        "cordova",
+        "multifile",
+        "upload",
+        "transfer"
+    ],
+    "author": "Faizal Sidek",
+    "licence": "MIT"
+}
