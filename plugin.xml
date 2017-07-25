@@ -23,7 +23,7 @@
         </config-file>
         <source-file src="src/android/MultiFileTransfers.java" target-dir="src/com/rockraft7/plugin/multifiletransfers"/>
         <source-file src="src/android/FileInfo.java" target-dir="src/com/rockraft7/plugin/multifiletransfers"/>
-        <framework src="com.squareup.okhttp3:okhttp:3.8.1" />
+        <framework src="com.squareup.okhttp:okhttp:2.3.0" />
         <framework src="org.json:json:20170516" />
     </platform>
 </plugin>
