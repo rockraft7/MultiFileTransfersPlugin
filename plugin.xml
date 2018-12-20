@@ -26,4 +26,16 @@
         <framework src="com.squareup.okhttp:okhttp:2.3.0" />
         <framework src="org.json:json:20170516" />
     </platform>
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="MultiFileTransfers">
+                <param name="ios-package" value="MultiFileTransfers"/>
+                <param name="onload" value="true"/>
+            </feature>
+        </config-file>
+        <header-file src="src/ios/MultiFileTransfers.h" />
+        <source-file src="src/ios/MultiFileTransfers.m" />
+        <framework src="AssetsLibrary.framework" />
+        <framework src="MobileCoreServices.framework" />
+    </platform>
 </plugin>
