@@ -1,7 +1,7 @@
 package com.rockraft7.plugin.multifiletransfers;
 
 import android.os.AsyncTask;
-import android.os.Environment;
+import android.content.Context;
 import android.util.Base64;
 import android.widget.Toast;
 import com.squareup.okhttp.*;
@@ -136,7 +136,8 @@ public class MultiFileTransfers extends CordovaPlugin {
     private File writeAsFile(FileInfo fileInfo) throws Exception {
         String filePrefix = fileInfo.getFileName().substring(0, fileInfo.getFileName().lastIndexOf("."));
         String extension = fileInfo.getFileName().substring(fileInfo.getFileName().lastIndexOf("."));
-        File file = File.createTempFile(filePrefix, extension, Environment.getExternalStorageDirectory());
+        final Context context = this.cordova.getActivity().getApplicationContext();
+        File file = File.createTempFile(filePrefix, extension, context.getFilesDir());
         FileOutputStream outputStream = new FileOutputStream(file, true);
         outputStream.write(Base64.decode((fileInfo.getEncodedData()).getBytes(), Base64.DEFAULT));
         outputStream.close();
